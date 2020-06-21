@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+{% block title %}Country{% endblock title %}
+
+{% block body %}
+<div class="container my-5">
+    <div class="card mb-3">
+        <img src="/static/img/w1.jpg" class="card-img-top" alt="...">
+        <h1 class="card-header">{{w.country}}</h1>
+        <div class="card-body">
+            Cases<h3>{{w.cases}}</h3>
+            Todays Cases<h3>{{w.todaycases}}</h3>
+            Deaths<h3>{{w.deaths}}</h3>
+            Todays Deaths<h3>{{w.todaydeaths}}</h3>
+            Recovered<h3>{{w.recovered}}</h3>
+            Active<h3>{{w.active}}</h3>
+            Critical<h3>{{w.critical}}</h3>
+            Cases/Million<h3>{{w.casesPerOneMillion}}</h3>
+            Deaths/Million<h3>{{w.deathsPerOneMillion}}</h3>
+        </div>
+    </div>
+</div>
+{% endblock body %}
